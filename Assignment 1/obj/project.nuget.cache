@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZF+iShAHAZxIZASWnUyT2BDeIZFDn7uIrw6Bv6f1aMgud5oK2tgF6ckvbpqUg0hEqPnZonPNMxUxU9zxZ1FFaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maldarin\\source\\repos\\Assignment 1\\Assignment 1\\Assignment 1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maldarin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
