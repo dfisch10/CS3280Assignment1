@@ -1,6 +1,6 @@
 # CS3280Assignment1
 
-Assignment #1 for CS-3280 required us to consider how posts on Facebook look, and have us write a console application that mimics how the UI on Facebook would display when friends like your post. The output for the application was created using the following rule:
+Assignment #1 for CS-3280 required us to consider how posts on Facebook look, and have us write a console application that mimics how the UI on Facebook would display when friends like your post. The output for the application was created using the following rules:
 
 - If no one likes your post, it doesn’t display anything.
 - If only one person likes your post, it displays [Friend’s Name] likes your post
