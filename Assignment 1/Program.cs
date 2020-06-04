@@ -22,7 +22,7 @@ namespace Assignment_1
             {
                 Console.Write("Please enter a name: ");
 
-                String name = Console.ReadLine();
+                var name = Console.ReadLine();
 
                 if (String.IsNullOrEmpty(name))
                 {
@@ -33,16 +33,21 @@ namespace Assignment_1
             }
 
             // Calls method to display the appropriate format based off of # of users in friendNames list.
-            FriendLikes(friendNames);
+            OutputPostLikes(friendNames);
         }
 
         /// <summary>
-        /// The FriendLikes method checks the count of names added to 'friendNames', and returns the appropriate response dependent upon that count/number (checks for one, two, more than two, and null/empty amounts).
+        /// The OutputPostLikes method checks the count of names added to 'friendNames', and returns the appropriate response dependent upon that count/number (checks for one, two, more than two, and null/empty amounts).
         /// </summary>
         /// <param name="friendNames">A List<String> containing names of friends who "liked" your post. </String></param>
-        private static void FriendLikes(List<string> friendNames)
+        private static void OutputPostLikes(List<string> friendNames)
         {
-            if (friendNames.Count == 1)
+            if(friendNames.Count == 0 || friendNames is null)
+            {
+                Console.WriteLine();
+            }
+            
+            else if (friendNames.Count == 1)
             {
                 Console.WriteLine(friendNames[0] + " likes your post");
             }
@@ -53,10 +58,6 @@ namespace Assignment_1
             else if (friendNames.Count > 2)
             {
                 Console.WriteLine(friendNames[0] + ", " + friendNames[1] + " and " + (friendNames.Count - 2) + " other(s) liked your post");
-            }
-            else
-            {
-                Console.WriteLine();
             }
         }
     }
